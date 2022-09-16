@@ -57,7 +57,7 @@ nav.sticky img{
     margin-left: -100px;
 }
 nav.sticky .textlogo{
-    margin-left: -30px; 
+    margin-left: -200px; 
 }
 nav.sticky ul{
     width: auto;
@@ -74,7 +74,7 @@ nav.sticky ul{
 .texthigh{
     padding-top: 2px;
     margin-left:2%;
-    width: 41%;
+    width: 35%;
     margin-top:3px;
     border-bottom-style:dotted;
     color: rgb(255, 105, 0);
