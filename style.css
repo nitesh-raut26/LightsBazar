@@ -57,28 +57,28 @@ nav.sticky img{
     margin-left: -100px;
 }
 nav.sticky .textlogo{
-    margin-left: -200px; 
+    margin-left: -30px; 
 }
 nav.sticky ul{
     width: auto;
 }
 .middle{
-    /* width:75px; */
+    width:75px;
      height:50vh; 
   display: block;
   margin-left:20%;
-  /* margin-right: 200px; */
+  margin-right: 200px;
   width: 40%;
 
 }
 .texthigh{
     padding-top: 2px;
-    margin-left:25%;
-    width: 35%;
+    margin-left:2%;
+    width: 41%;
     margin-top:3px;
     border-bottom-style:dotted;
-    color: rgb(255, 145, 0);
-    border-left-width:2px;
+    color: rgb(255, 105, 0);
+    border-left-width:10px;
     /* background-color: black; */
 }
 .textalign
@@ -92,9 +92,9 @@ nav.sticky ul{
 .textalign .text{
     /* height:50vh;  */
     /* display: block; */
-    /* border-left: 2px; */
+    border-left: 2px;
     margin-left:3%;
-    /* margin-right: 200px; */
+    margin-right: 200px;
     width: 100%;
     /* border-left-style:thin; */
     border-left-width:2px;
@@ -181,4 +181,60 @@ hr{
 }
 .copyright{
     text-align:center;
+}
+
+@media only screen and (max-width:700px){
+    .header{
+    width: 100%;
+    /* margin-top: 50px; */
+    height: 20vh;  
+    background-position:center;
+    background-size: cover;
+    border-style:solid;
+    border-bottom-width:5px;
+    }
+    .logo{
+        width: 20px;
+        height:20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .textlogo{
+        font-size:200%;
+        text-align: center;
+        position: relative;
+        
+    }
+    nav.sticky img{
+        margin-top: 3%;
+        margin-left: 90px;
+    }
+    nav ul{
+        width:100%;
+        background: rgb(0, 0, 0);
+        position: absolute;
+        top:100px;
+        z-index:2;
+    }
+    nav ul li{
+        display:block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+    }
+  
+    /* position: absolute; */
+    /* border-left-width:2px; */
+ 
+    .texthigh{
+     font-size:1rem;
+     /* display:inline; */
+     margin-left:2%;
+     width:130%;
+        /* text-align: center; */
+    }
+   .middle{
+      height:20%;
+    }
+
 }
