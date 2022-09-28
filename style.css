@@ -19,6 +19,13 @@ nav{
    padding: 20px 0;
    text-align: center;
 }
+#menu a{
+    color:#fff;
+    text-decoration: none;
+}
+#menu a:hover{
+   color: crimson;
+}
 .logo{
     width: 40px;
     height:40px;
@@ -63,8 +70,8 @@ nav.sticky ul{
     width: auto;
 }
 .middle{
-    width:75px;
-     height:50vh; 
+    width:60px;
+     height:45vh; 
   display: block;
   margin-left:20%;
   margin-right: 200px;
@@ -83,21 +90,125 @@ nav.sticky ul{
 }
 .textalign
 {
+    /* margin-top: -100px; */
     margin-left:20%;
     /* margin-right: 200px; */
     width: 40%;
     border-left-style:solid;
     border-left-width:2px;
 }
-.textalign .text{
+ .text{
     /* height:50vh;  */
+    /* padding-left: px; */
+    margin-left:20px;
     /* display: block; */
+    padding-top:6px;
     border-left: 2px;
-    margin-left:3%;
-    margin-right: 200px;
+    /* margin-left:20%; */
+    /* margin-right: 200px; */
     width: 100%;
-    /* border-left-style:thin; */
-    border-left-width:2px;
+    /* border-left-style:solid; */
+    border-left-width:1px;
+    margin-bottom:10px;
+}
+.sidebar{
+    /* display: relative; */
+    float: left;
+   /* margin-top: 10px; */
+    width: 40%;
+    margin-left:120px;
+    margin-right:0px;
+    /* padding: 10px; */
+    /* padding-top: 35px; */
+}
+.sidebar img{
+  margin-left: 350px;
+  height:50%;
+  width:65%;
+}
+.sidebar h3{
+    margin-top: 20px;
+    margin-left:55%; 
+    color: blue;
+}
+.sidebar  ul a{
+    margin-top: 20px;
+    margin-left:60%;
+    display: block;
+    color: darkgoldenrod;
+    text-decoration:dotted;
+}
+.sidebar  ul a:hover{
+    color: #c73f12;
+}
+
+ .query{
+    /* display: relative; */
+    /* float: left; */
+   /* margin-top: 10px; */
+    /* width: 40%; */
+    margin-left:120px;
+    margin-right:0px;
+    /* padding: 10px; */
+    /* padding-top: 35px; */
+}
+.query .texalign{
+  margin-left: 200px;
+  height:100%;
+/* width:150%; */
+}
+.query .texthigh{
+    width:40%;
+}
+.query form{
+    margin-top: -290px;
+    margin-left:69%; 
+    /* margin-right:20px; */
+    padding:1vw 4vw;
+    color: rgb(14, 183, 206);
+    display :flex;
+    flex-direction: column;
+    width:25%;
+
+}
+.query h3{
+    margin-right:20px;
+}
+.query  input{
+  padding:1vw;
+  font-size:1rem;
+  width: 90%;
+  margin-right:-30px;
+  font-weight:bold;
+  color: #000;
+  /* background: #f5f5f5; */
+  /* border-color:#f5f5f5; */
+  
+}
+.query .text{
+    width:80%;
+    text-align: justify;
+}
+.query textarea{
+    width:100%;
+    margin-right:-40px;
+    font-size:1rem;
+    margin-top:1px;
+    padding: 2px 0px 0px 5px;
+
+}
+.query button{
+    /* bottom:10px; */
+   
+    font-size:1rem;
+    font-weight:bold;
+    padding:3px 0;
+    background: #ff5361;
+    color:#fff;
+    padding: 15px;
+    border:0;
+    margin-top:5px;
+   
 }
 footer{
     width:100%;
@@ -121,21 +232,36 @@ footer{
     flex-basis: 25%;
     padding: 10px;
 }
+
 .col h3{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
 }
+#bottomm{
+  margin-left: 40%;
+}
 .email-id{
     width: fit-content;
     border-bottom: 1px solid #ccc;
 }
-ul li{
+/* ul li{
 list-style:none;
-margin-bottom: 12px;
+margin-bottom: -100px;
+} */
+.link{
+    margin-top:10%;
 }
-ul li a{
+ul span a{
   text-decoration: none;
+ /* padding-top:15%; */
+ /* margin-bottom: 20px; */
+  ;
+ /* color: #4d028b; */
+ color: #fff;
+}
+ul span a:hover{
+    color:rgb(16, 236, 192);
 }
 form{
     padding-bottom: 15px;
@@ -165,7 +291,7 @@ form button{
 }
 form button .fa-solid{
   font-size: 16px;
-  color: #ccc;
+  color: rgb(17, 182, 237);
 }
 .social-icons{
     font-size: 20px;
@@ -184,18 +310,18 @@ hr{
 }
 
 @media only screen and (max-width:700px){
-    .header{
-    width: 100%;
-    /* margin-top: 50px; */
-    height: 20vh;  
+    /* .header{
+    width: 10px;
+    margin-top: 50px;
+    height: 10vh;      
     background-position:center;
     background-size: cover;
     border-style:solid;
     border-bottom-width:5px;
-    }
-    .logo{
-        width: 20px;
-        height:20px;
+    } */
+    /* .logo{
+        width: 10px;
+        height:15px;
         border-radius: 50%;
         cursor: pointer;
     }
@@ -222,19 +348,24 @@ hr{
         margin-bottom: 10px;
 
     }
-  
+   
+
+    nav.sticky img{
+        margin-top: 3%;
+        margin-right: 500px;
+    }
     /* position: absolute; */
     /* border-left-width:2px; */
  
-    .texthigh{
-     font-size:1rem;
+    /* .texthigh{
+     font-size:1rem; */
      /* display:inline; */
-     margin-left:2%;
+     /* margin-left:2%;
      width:130%;
         text-align: center;
     }
    .middle{
       height:20%;
-    }
+    } */ */
 
-}
+ } 

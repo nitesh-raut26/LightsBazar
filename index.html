@@ -7,6 +7,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
     <script src="https://kit.fontawesome.com/62fe9ece05.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="shortcut icon" type="image/ico" href="image/favicon.ico">
 </head>
 <body>
@@ -15,34 +16,59 @@
             <img src="image/logoimage.png" class="logo">
             <strong class="textlogo">Lights Bazar</strong>
             <ul id="menu">
-                <li>HOME</li>
-                <li>PRODUCT</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-                <li>ENQUIRY</li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="Product.html">PRODUCT</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ENQUIRY</a></li>
             </ul>
          </nav>
     </div>
-    <div class="heading">
+    <!-- <div class="heading"> -->
+        <div class="sidebar">
+            <!-- <div class="heading"> -->
         <img src="image/image1.jpeg" class="middle">
-
-    </div>
+        </div>
+        <!-- </div> -->
+        <div class="sidebar">
+            
+            
+            <h3 ><i class="fa-solid fa-cart-shopping"></i>  Product Category</h3>
+             <ul>               
+                <a href=""><i class="fa fa-arrow-right"></i> LED TUBE LIGHTS</a>
+                <a href=""><i class="fa fa-arrow-right"></i> LED FLOOD LIGHTS</a>
+                <a href=""><i class="fa fa-arrow-right"></i> LED RECESSED LIGHTS</a>
+                <a href=""><i class="fa fa-arrow-right"></i> LED TRACK LIGHTS</a>
+                <a href=""><i class="fa fa-arrow-right"></i> LED STREET LIGHTS</a>
+                <a href=""><i class="fa fa-arrow-right"></i> LED LIGHTING PROJECTS</a>
+                <a href=""><i class="fa fa-arrow-right"></i> LED AUTO LIGHTS</a>
+                <a href=""><i class="fa fa-arrow-right"></i> SMD FLEXIBLE STRIP</a>
+            </ul>
+         </div>
+    <!-- </div> -->
     <!-- <h3>Welcome to Lights Bazar</h3> -->
+    <div class="query">
    <div class="textalign">
     <h3 class="texthigh">Welcome to Lights Bazar</h3>
     
-    <p ><p class="text"><b style="color:#1675eb;">Lights Bazar</b> is an exclusive store designer LED Lightings in India.</p><br>
+    <p class="text"> <b style="color:#1675eb;">Lights Bazar</b> is an exclusive store designer LED Lightings in India.<br>
 
         Our organization has been growing at a very fast pace in the field of  LED concept lightings.  Now keeping in mind the need of global energy we are planning to provide LED Lights in India as the best possible solution for the biggest problem staring at us Now days Global Warming. <br>
         All of our lighting systems are designed to provide you best quality in the market.
         <b style="color:brown ;">All of our products comes with two year <strong>REPLACEMENT</strong> warranty.</b><br>
-        We are the leading Manufacturers and Exporters of premier outdoor LED lighting solutions in India like LED Outdoor Lights, LED Interior lights, LED Auto Lights India, LED down lights, Solar lights, Energy saving lights, LED lights supplier in India.</p>
-    <!-- <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat tempora, 
-            dolorum voluptate cum voluptates voluptatem nulla modi eligendi assumenda enim vitae,
-             consectetur dolorem, animi doloribus iure! Praesentium, velit sequi.</p>
-          -->
-                                                                  
-</div>
+        We are the leading Manufacturers and Exporters of premier outdoor LED lighting solutions in India like LED Outdoor Lights, LED Interior lights, LED Auto Lights India, LED down lights, Solar lights, Energy saving lights, LED lights supplier in India.</p>                                                                 
+   </div>
+   </div>
+    <div class="query">
+         <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Quick Query form</h3>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="tel" id="phone" placeholder="Phone no" pattern="[0-9]{10}" required>
+           <textarea id="message" rows="5" placeholder="How can we help you"></textarea>
+            <button type="submit">Submit</button> 
+         </form>
+    </div> 
 <footer>
     <div class="row">
         <!-- <div class="col">
@@ -58,20 +84,22 @@
         <h4>+91-9960438568</h4>
         </div>
         <div clas="col">
-        <h3>Links</h3>
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#PRODUCT">PRODUCT</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#enquiry">ENQUIRY</a></li>
+        <h3 id="bottomm">Links</h3>
+        <ul class="link">
+            <strong>
+            <span><a href="#home">HOME</a></span>&nbsp&nbsp&nbsp     
+            <span><a href="#PRODUCT">PRODUCT</a></span>&nbsp&nbsp 
+            <span><a href="#about">ABOUT</a></span>&nbsp&nbsp&nbsp 
+            <span><a href="#contact">CONTACT</a></span>&nbsp&nbsp&nbsp 
+            <span><a href="#enquiry">ENQUIRY</a></span>&nbsp&nbsp&nbsp 
+            </strong>
         </ul>
         </div>
         <div clas="col">
         <h3>Newsletter</h3>
         <form>
-            <i class="fa-regular fa-envelope"></i>
-            <input type="email" placeholder="Enter your email-id" required>
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder=" Enter your email-id" required>
             <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
         </form>
         <div class="social-icons">
@@ -79,6 +107,7 @@
             <i class="fa-brands fa-whatsapp"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
+           
         </div>
         </div>
 
@@ -102,6 +131,21 @@
         }
     }
   </script> 
+  <script>
+    function sendEmail(){
+        Email.send({
+      Host : "smtp.gmail.com",
+      Username : "rautn211@gmail.com",
+      Password : "Nitecode@2699",
+      To : 'contactlightsbazar@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New contact form Enquiry",
+      Body : "And this is the body"
+      }).then(
+      message => alert("Message sent succesfully")
+      );
+  }
+  </script>
 </body>
 </html>
 
