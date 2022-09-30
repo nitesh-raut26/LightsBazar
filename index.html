@@ -7,8 +7,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
     <script src="https://kit.fontawesome.com/62fe9ece05.js" crossorigin="anonymous"></script>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <link rel="shortcut icon" type="image/ico" href="image/favicon.ico">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -63,25 +61,13 @@
    </div>
    </div>
     <div class="query">
-        <form>
-         <!-- <form onsubmit="sendemail(); reset(); return false;"> -->
+         <form onsubmit="sendemail(); reset(); return false;">
             <h3><i class="fa-solid fa-user"></i> Quick Query form</h3>
             <input type="text" class="form-control" id="thename" placeholder="Your name" required>
             <input type="email" class="form-control" id="themail" placeholder="Email id" required>
             <input type="tel" class="form-control" id="thephone" placeholder="Phone no" pattern="[0-9]{10}" required>
            <textarea class="form-control" id="themsg" rows="5" placeholder="How can we help you"></textarea>
-            <button class="btn btn-danger btn-sm" type="submit"  onCLick="sendemail();"  >Submit</button> 
-
-
-            <!-- <label for="thename">Name</label>
-        <input type="text" class="form-control" id="thename" placeholder="Enter Name">
-        <label for="themail">Email:</label>
-        <input type="email" class="form-control" id="themail" placeholder="Enter Email">
-		<label for="themail">Phone:</label>
-        <input type="tel" class="form-control" id="thephone" placeholder="Enter Phone">
-        <label for="themsg">Message</label>
-        <textarea class="form-control" id="themsg" placeholder="Enter Message"></textarea>
-        <button class="btn btn-danger btn-sm" style="margin-top:10px;" onCLick="sendemail();">Send</button> -->
+            <button class="btn btn-danger btn-sm" type="submit" > Submit</button> 
          </form>
     </div> 
 <footer>
