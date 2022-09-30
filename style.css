@@ -25,6 +25,7 @@ nav{
 }
 #menu a:hover{
    color: crimson;
+   text-decoration: underline;
 }
 .logo{
     width: 40px;
@@ -128,18 +129,19 @@ nav.sticky ul{
 }
 .sidebar h3{
     margin-top: 20px;
-    margin-left:55%; 
+    margin-left:50%; 
     color: blue;
 }
 .sidebar  ul a{
     margin-top: 20px;
-    margin-left:60%;
+    margin-left:54%;
     display: block;
     color: darkgoldenrod;
     text-decoration:dotted;
 }
 .sidebar  ul a:hover{
     color: #c73f12;
+    text-decoration:underline;
 }
 
  .query{
@@ -181,7 +183,7 @@ nav.sticky ul{
   margin-right:-30px;
   font-weight:bold;
   color: #000;
-  /* background: #f5f5f5; */
+  background: #f5f5f5;
   /* border-color:#f5f5f5; */
   
 }
@@ -262,6 +264,7 @@ ul span a{
 }
 ul span a:hover{
     color:rgb(16, 236, 192);
+    text-decoration: underline;
 }
 form{
     padding-bottom: 15px;

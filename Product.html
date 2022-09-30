@@ -7,6 +7,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/62fe9ece05.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='stylep.css'>
+    <link rel="shortcut icon" type="image/ico" href="image/favicon.ico">
 </head>
 <body>
     <div class="header">
@@ -22,6 +26,116 @@
            </ul>
         </nav>
    </div>
+   <div class="sidebar1">
+                       
+    <h3 ><i class="fa-solid fa-cart-shopping"></i>  Product Category</h3>
+     <ul>               
+        <a href=""><i class="fa fa-arrow-right"></i> LED TUBE LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED FLOOD LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED RECESSED LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED TRACK LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED STREET LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED LIGHTING PROJECTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED AUTO LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> SMD FLEXIBLE STRIP</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED TUBE LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED TUBE LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED TUBE LIGHTS</a>
+        <a href=""><i class="fa fa-arrow-right"></i> LED TUBE LIGHTS</a>
+    </ul>
+ </div>
+ <div class="sidebar1">
+    <!-- <div class="heading"> -->
+<img src="image/image1.jpeg" class="middle">
+</div>
+<div class="query1">
+    <form onsubmit="sendEmail(); reset(); return false;">
+       <h3><i class="fa-solid fa-user"></i> Quick Query form</h3>
+       <input type="text" id="name" placeholder="Your name" required>
+       <input type="email" id="email" placeholder="Email id" required>
+       <input type="tel" id="phone" placeholder="Phone no" pattern="[0-9]{10}" required>
+      <textarea id="message" rows="5" placeholder="How can we help you"></textarea>
+       <button type="submit">Submit</button> 
+    </form>
+</div> 
+ <footer>
+    <div class="row">
+        <!-- <div class="col">
+            <img src=""alt="">
+            
+        </div> -->
+        <div clas="col">
+        <h3>office</h3>
+        <p>Coming Soon Gurgaon,Haryana</p>
+        <!-- <p>Haryana,PIN-122004,INDIA</p> -->
+        <p class="email-id">contactlightsbazar@gmail.com</p>
+        <h4>+91-9599301369</h4>
+        <h4>+91-9960438568</h4>
+        </div>
+        <div clas="col">
+        <h3 id="bottomm">Links</h3>
+        <ul class="link">
+            <strong>
+            <span><a href="index.html">HOME</a></span>&nbsp&nbsp&nbsp     
+            <span><a href="#">PRODUCT</a></span>&nbsp&nbsp 
+            <span><a href="#about">ABOUT</a></span>&nbsp&nbsp&nbsp 
+            <span><a href="#contact">CONTACT</a></span>&nbsp&nbsp&nbsp 
+            <span><a href="#enquiry">ENQUIRY</a></span>&nbsp&nbsp&nbsp 
+            </strong>
+        </ul>
+        </div>
+        <div clas="col">
+        <h3>Newsletter</h3>
+        <form>
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder=" Enter your email-id" required>
+            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+           
+        </div>
+        </div>
+
+    </div>
+    <hr>
+    <p class="copyright">Lights Bazzar © 2022 - All Rights Reserved</p>
+</footer>
+<hr>
+   
+  <script>
+    var navbar=document.getElementById("navbar");
+    var menu=document.getElementById("menu");
+
+    window.onscroll=function(){
+        if(window.pageYOffset>=menu.offsetTop)
+        {
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+  </script> 
+  <script>
+    function sendEmail(){
+        Email.send({
+      Host : "smtp.gmail.com",
+      Username : "rautn211@gmail.com",
+      Password : "Nitecode@2699",
+      To : 'contactlightsbazar@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New contact form Enquiry",
+      Body : "And this is the body"
+      }).then(
+      message => alert("Message sent succesfully")
+      );
+  }
+  </script>
+
 </body>
 </html>
 
