@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+#contactimage{
+    margin-left:25%;
+    margin-top: 20%;
+    height: 50%;
+    width:50%;
+    cursor: pointer;
+
+}
+.contactside{
+    margin-left:-25%;
+    margin-top :-52%;
+}
+#details{
+   color:forestgreen;
+   /* text-underline-offset: dotted; */
+   text-shadow: 65px;
+   text-decoration:solid;
+   border-width: 65px;
+}
+#high{
+  color:darkorange;
+}
+#comesoon{
+    color: blue;
+}
+#branch{
+  color:brown;
+}
+#contactmobile
+{
+  color: rgb(234, 13, 212);
+}
